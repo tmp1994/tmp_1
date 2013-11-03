@@ -1,8 +1,6 @@
 #include <iostream>
 #include <time.h>
-using std::cin;
-using std::cout;
-using std::endl;
+using namespace std;
 
 void InsertionSort(int *a, int n, int k) { // сортировка вставкой по возврастанию (рекурсия)
 	int i(0), key(0);
