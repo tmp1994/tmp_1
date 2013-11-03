@@ -31,4 +31,5 @@ int main() {
 		}
 	}
 	cout << result << endl;
+	system("pause");
 }
