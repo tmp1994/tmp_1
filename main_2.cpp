@@ -18,11 +18,13 @@ void InsertionSort(int *a, int n, int k) {
 	else
 		return;
 }
+
 void Print(int *a, int n) {
 	for (int i(0); i < n; i++)
 		cout << a[i] << " ";
 	cout << endl;
 }
+
 int BinFind(int *mas, int f, int l, int v) {
 	if (l - f + 1 > 2) {
 		int i = f + (l - f + 1) / 2 + (l - f + 1) % 2;
@@ -38,25 +40,11 @@ int BinFind(int *mas, int f, int l, int v) {
 			if (mas[l] == v)
 				return l;
 			else
-				return -1; // или v / 0 
+				return -1;
 	}
 }
+
 int main() {
-	/*int n(0);
-	cin >> n;
-	int *b = new int [n];
-	for (int i(0); i < n; i++) 
-		cin >> b[i];
-		*/
-	/*int b[] = {5, 2, 4, 6, 1, 3};
-	//int b[] = {4, 2, 3, 0}; 
-	system("cls");
-	Print(b, sizeof b / sizeof(int));
-	InsertionSort(b, sizeof b / sizeof(int), 2);
-	Print(b, sizeof b / sizeof(int));
-	for (int i(0); i < sizeof b / sizeof(int); i++)
-		cout << b[i] << " -> " << BinFind(b, 0, sizeof b / sizeof(int) - 1, b[i]) << endl;
-		*/
 	srand(time(NULL));
 	int n(rand() % 91 + 10);
 	int *b = new int [n];
