@@ -1,17 +1,14 @@
 // AUTHOR: VIT
 #include <iostream>
 #include <map>
-
 using namespace std;
-
-typedef unsigned long uLong;
 
 int main() {
 	int n = 0;
 	cin >> n;
-	uLong *id = new uLong[n];
-	map<uLong, uLong> res;
-	for (uLong i = 0; i < n; i++) {
+	unsigned long *id = new unsigned long[n];
+	map<unsigned long, unsigned long> res;
+	for (unsigned long i = 0; i < n; i++) {
 		cin >> id[i];
 		auto entry = make_pair(id[i], 1);
 		auto tt = res.insert(entry);
