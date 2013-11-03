@@ -3,6 +3,23 @@
 
 using namespace std;
 
+int main() {
+	srand(time(NULL));
+	int n(rand() % 91 + 10);
+	int *b = new int [n];
+	for (int i(0); i < n; i++)
+		b[i] = rand() % 100;
+	InsertionSort(b, n, 2);
+	for (int i(0); i < n; i++)
+		cout << "b[" << i << "] = " << b[i] << endl;
+	for (int i(0); i < n; i++) {
+		int h = rand() % 100;
+		cout << h << " -> " << BinFind(b, 0, n - 1, h) << endl;
+	}
+	system("pause");
+	return 0;
+}
+
 void InsertionSort(int *a, int n, int k) { 
 	int i(0), key(0);
 	if (k <= n) {
@@ -42,21 +59,4 @@ int BinFind(int *mas, int f, int l, int v) {
 			else
 				return -1;
 	}
-}
-
-int main() {
-	srand(time(NULL));
-	int n(rand() % 91 + 10);
-	int *b = new int [n];
-	for (int i(0); i < n; i++)
-		b[i] = rand() % 100;
-	InsertionSort(b, n, 2);
-	for (int i(0); i < n; i++)
-		cout << "b[" << i << "] = " << b[i] << endl;
-	for (int i(0); i < n; i++) {
-		int h = rand() % 100;
-		cout << h << " -> " << BinFind(b, 0, n - 1, h) << endl;
-	}
-	system("pause");
-	return 0;
 }
