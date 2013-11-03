@@ -1,5 +1,5 @@
 #include <iostream>
-using std::cin, std::cout, std::endl;
+using namespace std;
 
 void BinSum(int *, int *, int *, int);
 
