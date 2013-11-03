@@ -3,7 +3,9 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+
 void BinSum(int *, int *, int *, int);
+
 
 int main() {
 	const int n = 4;
@@ -18,6 +20,7 @@ int main() {
 	system("pause");
 	return 0;
 }
+
 
 void BinSum(int *a, int *b, int *c, int n) {
 	int k(0);
