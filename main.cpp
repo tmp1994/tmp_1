@@ -3,23 +3,21 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-
-// void BinSum(int *a, int *b, int *c, int n) {
-// 	int k(0);
-// 	for (int i(n-1); i >= 0; i--) {
-// 		int rez = a[i] + b[i] + k;
-// 		if (rez < 2) {
-// 			c[i+1] = rez;
-// 			k = 0;
-// 		}
-// 		else {
-// 			c[i+1] = rez - 2;
-// 			k = 1;
-// 		}
-// 	}
-// 	c[0] = k;
-// }
-
+void BinSum(int *a, int *b, int *c, int n) {
+	int k(0);
+	for (int i(n-1); i >= 0; i--) {
+		int rez = a[i] + b[i] + k;
+		if (rez < 2) {
+			c[i+1] = rez;
+			k = 0;
+		}
+		else {
+			c[i+1] = rez - 2;
+			k = 1;
+		}
+	}
+	c[0] = k;
+}
 
 int main() {
 	const int n = 4;
