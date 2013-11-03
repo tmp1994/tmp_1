@@ -1,8 +1,6 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
-
 
 void BinSum(int*, int*, int*, int);
 
