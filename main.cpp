@@ -3,7 +3,7 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-void BinSum(int *a, int *b, int *c, int n);
+void BinSum(int *, int *, int *, int);
 
 int main() {
 	const int n = 4;
