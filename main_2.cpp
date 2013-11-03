@@ -1,8 +1,9 @@
 #include <iostream>
 #include <time.h>
+
 using namespace std;
 
-void InsertionSort(int *a, int n, int k) { // сортировка вставкой по возврастанию (рекурсия)
+void InsertionSort(int *a, int n, int k) { 
 	int i(0), key(0);
 	if (k <= n) {
 		key = a[k-1];
@@ -22,7 +23,7 @@ void Print(int *a, int n) {
 		cout << a[i] << " ";
 	cout << endl;
 }
-int BinFind(int *mas, int f, int l, int v) { // бинарный поиск
+int BinFind(int *mas, int f, int l, int v) {
 	if (l - f + 1 > 2) {
 		int i = f + (l - f + 1) / 2 + (l - f + 1) % 2;
 		if (mas[i-1] <= v)
