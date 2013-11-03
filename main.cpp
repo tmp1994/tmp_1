@@ -26,8 +26,9 @@ int main() {
 	int c[n+1] = {0};
 	BinSum(a, b, c, n);
 	cout << "0 0 " << c[0] << endl;
-	for (int i(0); i < n; i++) 
+	for (int i(0); i < n; i++) {
 		cout << a[i] << " " << b[i] << " " << c[i+1] << endl;
+	}
 	system("pause");
 	return 0;
 }
