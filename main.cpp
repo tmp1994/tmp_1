@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void BinSum(int *, int *, int *, int);
+void BinSum(int*, int*, int*, int);
 
 int main() {
 	const int n = 4;
