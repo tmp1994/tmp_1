@@ -1,8 +1,7 @@
+// AUTHOR: VIT
 #include <iostream>
 #include <time.h>
-
 using namespace std;
-
 
 void InsertionSort(int*, int, int);
 void Print(int*, int);
