@@ -3,9 +3,10 @@
 
 using namespace std;
 
-void InsertionSort(int *, int, int);
-void Print(int *, int);
-int BinFind(int *, int, int, int);
+
+void InsertionSort(int*, int, int);
+void Print(int*, int);
+int BinFind(int*, int, int, int);
 
 int main() {
 	srand(time(NULL));

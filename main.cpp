@@ -3,6 +3,7 @@
 
 using namespace std;
 
+
 void BinSum(int*, int*, int*, int);
 
 int main() {
