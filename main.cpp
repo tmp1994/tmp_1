@@ -1,9 +1,10 @@
 #include <iostream>
-using std::cin;
-using std::cout;
-using std::endl;
+#include <string>
 
-void BinSum(int *, int *, int *, int);
+using namespace std;
+
+
+void BinSum(int*, int*, int*, int);
 
 int main() {
 	const int n = 4;
