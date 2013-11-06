@@ -34,3 +34,5 @@ void BinSum(int *a, int *b, int *c, int n) {
 	}
 	c[0] = k;
 }
+1
+2
