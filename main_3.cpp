@@ -33,5 +33,4 @@ int main() {
 	cout << result << endl;
 	system("pause");
 }
-1
-2
+3 4
