@@ -64,3 +64,4 @@ int BinFind(int *mas, int f, int l, int v) {
 				return -1;
 	}
 }
+5-6

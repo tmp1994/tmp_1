@@ -33,3 +33,4 @@ int main() {
 	cout << result << endl;
 	system("pause");
 }
+5-6
